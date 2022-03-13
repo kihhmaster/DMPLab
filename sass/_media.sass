@@ -1,0 +1,703 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+//`@media (max-width: 1400px) { ...}
+@include media-breakpoint-down(xxl)
+	.wrapp__example
+		.wrapp__example--item
+			max-width: 350px
+			padding: 30px 15px
+	.wrapp__example--item 
+		.example--text 
+			.example__item--desc
+				font-size: 16px
+	.example--time
+		width: 100% 
+		.item__time
+			width: 100%			
+			font-size: 14px
+			img
+				margin-bottom: 10px
+	.example--flag 
+		.example__flag--desc
+			font-size: 18px
+	.wrapp__campaign 
+		.button.button__campaign
+			width: 400px
+			height: 400px
+	.campaign__fon--right, .campaign__fon--left
+		width: 30%
+	.section__suitable
+		margin-top: 350px
+	.section_process
+		margin-top: 150px
+	.wrapp__process
+		padding: 100px 50px
+	.advantages__item 
+		.advantages__item--desc
+			font-size: 28px
+			line-height: 1.2
+	.advantages__item
+		margin-bottom: 100px
+		img
+			margin-bottom: 25px
+	.wrapp__advantages--desc
+		margin-top: 200px
+
+	
+	.wrapp__aboutUs--desc
+		margin-bottom: 250px
+	.wrapp__question 
+		.question__contact 
+			.question__contact--desc 
+				a
+					font-size: 48px
+					margin-bottom: 10px
+					margin-right: 80px
+	.aboutUs__desc--title
+		font-size: 60px
+	.wrapp__aboutUs--desc
+		margin-bottom: 150px
+//`@media (max-width:  1200px) { ...}
+@include media-breakpoint-down(xl)
+	.navbar .nav__item
+		margin-left: 20px
+	.section__question
+		margin-top: 250px
+	.wrapp__examples 
+		.wrapp__examples--title 
+			.examples__title--text
+				font-size: 38px
+				line-height: 1.3
+	.wrapp__example
+		display: flex
+		justify-content: space-around
+	.wrapp__campaign 
+		.button.button__campaign
+			width: 250px
+			height: 250px
+			font-size: 24px
+			.campaing__icon--absolute
+				bottom: -120px
+				right: -30px
+
+	.campaign__fon--right, .campaign__fon--left
+		width: 30%
+	.wrapp__suitable--img
+		width: 55%
+	.section__suitable
+		margin-top: 250px
+	.suitable__icon--item
+		margin-right: 30px
+		margin-bottom: 30px
+	.wrapp__process 
+		.process__desc 
+			.process__desc--list
+				font-size: 20px
+	.process__unique
+		width: 50%
+		margin-left: 60px
+	.section__advantages
+		margin-top: 150px
+	.advantages__item 
+		.advantages__item--desc
+			font-size: 24px
+			line-height: 1.2
+	.advantages__item
+		margin-bottom: 80px
+		img
+			margin-bottom: 20px
+	.wrapp__advantages--desc
+		margin-top: 100px
+	.wrapp__advantages--project
+		left: 10%
+		img
+			width: 80%	
+			height: auto 
+	.advantages__item--project
+		font-size: 20px
+		line-height: 1.2
+
+	.section__aboutUs
+		margin-top: 100px
+	.aboutUs__desc--title
+		font-size: 36px
+	.wrapp__aboutUs--desc
+		margin-bottom: 50px
+	.aboutUs__desc--menu
+		margin-bottom: 100px
+	.desc__menu--item
+		font-size: 16px
+	.aboutUs__desc--title
+		margin-bottom: 50px
+	.aboutUs__desc--button
+		margin-bottom: 50px
+	.wrapp__aboutUs--img
+		bottom: -30px
+	.logo
+		img
+			width: 80px
+	.wrapp__question 
+		.question__contact
+			flex-flow: column wrap
+			margin-top: 80px 
+			.question__contact--desc
+				margin-bottom: 40px 
+				a
+					font-size: 48px
+					margin-bottom: 10px
+					margin-right: 80px
+//`@media (max-width: 992px) { ...}
+@include media-breakpoint-down(lg)
+	.examples__title--img
+		display: flex
+		flex-direction: column
+		.examples__img-desc
+			line-height: 1.2
+			margin-top: 20px
+	.examples__title--text
+		line-height: 1.2
+	.wrapp__process
+		display: flex
+		flex-direction: column
+	.process__unique
+		margin-left: 0
+	.navbar__wrapp
+		display: none
+	.top__line
+		height: 50px
+		padding: 5px 10px
+	.top__line--container
+		display: none
+	.container--mobail
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.navbar__wrapp--mobail
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		position: relative
+		width: 100%
+	.noregist__button--mobail
+		mask-image: url(#{$assetImages}/noregist__button--mobail.svg)
+		width: 21px
+		height: 21px
+		background: #000
+		&:hover
+			transition: background .1s ease
+			background: $accent
+	.noregist__button
+		margin-left: 0
+	.container--mobail
+		display: flex
+		width: 100%
+		justify-content: space-between
+		align-items: center
+	.logo
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		align-self: flex-end
+		img
+			width: 140px
+			height: 55px
+
+	.hamburger
+		width: 100%
+		display: flex
+		position: relative
+	
+	.hamburger--img
+		width: 20px
+		height: 20px
+
+	
+	.overlay
+		.navbar
+			display: flex
+			width: 100%
+			position: relative
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+			margin-left: 5px
+			.nav__item
+				width: 100%
+				margin-bottom: 20px
+			.post__wrapp[open]
+				.post
+					left: 0
+					margin-top: 10px
+					width: 260px
+					.post__item
+						margin-bottom: 10px
+
+	.overlay
+		.noregist__button
+			max-width: 200px
+			margin-bottom: 40px
+			margin-top: 40px
+
+//`@media (max-width: 768px) { ...}
+@include media-breakpoint-down(md)
+	.popup__title
+		font-size: 20px
+	.pol
+		font-size: 12px
+	.section__footer
+		margin-top: 150px
+	.wrapp__footer--img
+		display: none
+	.wrapp__footer--icon
+		.container
+			display: flex
+			flex-direction: column-reverse
+			justify-content: center
+			align-items: center
+	.wrapp__footer--menu 
+		.container
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.logo
+				margin-bottom: 64px
+				width: 100%
+				display: flex
+				align-items: center
+				justify-content: center
+			.navbar
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				margin-bottom: 64px
+	.navbar .nav__item
+		margin-left: 0
+		margin-bottom: 15px
+	.wrapp__footer--icon
+		margin: 0
+		margin-bottom: 30px
+	.wrapp__footer--icon .footer__icon--desc
+		text-align: center
+		margin-top: 64px
+		text-align-last: center
+	.wrapp__footer--icon .aboutUs__icons
+		align-items: center
+		justify-content: center
+	.wrapp__footer--icon .aboutUs__icons .aboutUs__item
+		margin: 20px
+	.wrapp__question .question__contact
+		margin-top: 60px
+	.wrapp__question .question__contact .question__contact--desc a
+		font-size: 36px
+	.wrapp__question .question__title
+		font-size: 36px
+	.section__question
+		margin-top: 150px
+	.section__examples
+		.wrapp__examples
+			.wrapp__example--mob
+				display: block
+	.example--time
+		.item__time 
+			img
+				width: 30px
+	.wrapp__examples
+		.owl-carousel 
+			.owl-item 
+				img
+					width: 30px
+	.section__examples
+		.container
+			padding-right: 0
+
+	.wrapp__example
+		display: none
+	.section__campaign
+		margin-top: 150px
+	.campaign__fon--right
+		display: none
+	.wrapp__campaign
+		display: flex
+		justify-content: space-evenly
+		align-items: center
+		.campaign__fon--left
+			margin-left: 0
+			width: 40%
+		.button.button__campaign
+			margin-top: 200px
+	.wrapp__suitable--desc 
+		.suitable__desc--title
+			margin-bottom: 54px
+			font-size: 36px
+	.suitable__icon--item 
+		img
+			width: 70px
+			margin-bottom: 15px
+	.suitable__icon--item
+		font-size: 16px
+		margin-right: 0px
+		margin-bottom: 25px
+	.wrapp__suitable--img
+		width: 45%
+	.section__suitable
+		margin-top: 180px
+	.process__desc--title
+		margin-bottom: 30px
+	.wrapp__process 
+		.process__desc 
+			margin-bottom: 80px
+			.process__desc--list 
+				li
+					margin-bottom: 30px
+	.wrapp__process 
+		.process__unique--desc
+			font-size: 16px
+	.button__process
+		margin-top: 40px
+		margin-bottom: 120px
+	.wrapp__process
+		padding: 80px 40px				
+	.aboutUs__desc--menu
+		margin-bottom: 40px
+	.section__aboutUs
+		margin-top: 70px
+	.desc__menu--item
+		font-size: 14px
+	.aboutUs__desc--title
+		font-size: 30px
+	.button.aboutUs__desc--button
+		width: 120px
+		height: 120px
+		font-size: 12px
+	.wrapp__aboutUs--icons
+		width: 40px
+		.aboutUs__icons
+			.aboutUs__item
+				img
+					width: 60%
+	.wrapp__aboutUs--desc
+		margin-bottom: 30px
+	.wrapp__aboutUs--img
+		bottom: -20px
+	.wrapp__advantages--img
+		display: none
+	.wrapp__advantages--desc
+		flex-flow: row wrap
+		display: flex
+		justify-content: center
+		align-items: center
+	.section__advantages
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+	.wrapp__advantages--img__md
+		position: absolute
+		left: 0
+		bottom: 0
+		display: flex
+		width: 100%
+		justify-content: flex-start
+		align-items: center
+		margin-top: 80px
+		img
+			width: 60%
+	.wrapp__advantages--project__md
+		padding-right: 30px
+		img
+			width: 100%
+			margin-bottom: 20px
+		.advantages__item--project
+			text-align: left
+			font-size: 16px
+			font-weight: 500
+			span
+				font-weight: 600
+				font-size: 20px
+
+	.wrapp__advantages--desc
+		margin-bottom: 280px
+		margin-top: 0
+	.wrapp__advantages--project
+		position: relative
+	.advantages__item
+		margin: 10px 
+		.advantages__item--desc
+			font-size: 16px
+	.wrapp__advantages--project
+		display: none
+	.section__advantages
+		margin-bottom: 100px
+	.wrapp__process 
+		.process__desc 
+			.process__desc--list 
+				li 
+					position: relative
+					padding-left: 30px
+					line-height: 1.5
+					img
+						position: absolute
+						left: -15px
+						top: 15px
+	.wrapp__examples 
+		.wrapp__examples--title 
+			.examples__title--text
+				font-size: 36px
+				line-height: 1.2
+	.wrapp__examples .wrapp__examples--title .examples__title--img
+		display: none
+	.wrapp__examples .owl-carousel .owl-item .example--flag 
+		.example__flag--img
+			display: flex
+			align-items: center
+			justify-content: center
+			img
+				width: 60px
+	.section__examples
+		margin-top: 250px
+	.wrapp__example--mob
+		display: flex
+//`@media (max-width: 576px) { ...}
+@include media-breakpoint-down(sm)
+	.wrapp__question .question__contact
+		margin-top: 60px
+	.wrapp__question .question__contact .question__contact--desc 
+		a
+			font-size: 26px
+		p
+			font-size: 16px
+	.wrapp__question .question__title
+		font-size: 30px
+	.section__examples
+		margin-top: 150px
+	.wrapp__examples 
+		.wrapp__examples--title 
+			.examples__title--text
+				font-size: 26px
+				line-height: 1.2
+	.wrapp__example--item
+		max-width: 350px
+	.section__campaign
+		margin-top: 80px
+	.campaign__fon--left
+		display: none
+	.campaign__fon--left__mob
+		display: flex
+	.wrapp__campaign 
+		.button.button__campaign
+			width: 130px
+			height: 130px
+			font-size: 12px
+	.button__campaign
+		img
+			width: 20px
+			margin-bottom: 5px
+
+	.wrapp__suitable--desc
+		display: flex
+		align-items: center
+		justify-content: center 
+		.suitable__desc--title
+			font-size: 26px
+	.suitable__icons
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+	.suitable__icons--row
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+	.section__suitable
+		.container
+			padding: 0
+	.suitable__icon--item
+		font-size: 20px
+		margin-bottom: 48px
+
+	.wrapp__suitable--img
+		display: none
+	.wrapp__suitable--img__mob
+		display: flex
+		width: 100%
+		justify-content: center
+		align-items: center
+		img
+			width: 100%
+	.wrapp__process 
+		.process__desc 
+			.process__desc--title
+				font-size: 26px
+				margin-bottom: 30px
+	.process__unique
+		width: 100%
+	.process__unique--img
+		width: 100%
+	.wrapp__process 
+		.process__img
+			width: 100%
+			position: relative
+			right: 0
+			bottom: -3px
+	.wrapp__process 
+		.process__desc 
+			.process__desc--list 
+				li 
+					position: relative
+					padding-left: 10px
+					line-height: 1.5
+					img
+						position: absolute
+						left: -20px
+						top: 15px
+						
+	.process__desc--title
+		margin-bottom: 30px
+	.wrapp__process 
+		padding: 40px 30px 0 30px
+		.process__desc 
+			margin-bottom: 80px
+			.process__desc--list 
+				li
+					margin-bottom: 30px
+					font-size: 18px
+	.container
+		padding-right: 10px
+		padding-left: 10px
+	.wrapp__process 
+		.process__unique--desc
+			font-size: 16px
+	.button__process
+		margin-top: 40px
+		margin-bottom: 120px
+
+
+	.wrapp__advantages--project
+		display: flex
+	.wrapp__advantages--img__md
+		display: none
+	.wrapp__advantages--img
+		display: none
+	.section__advantages
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-flow: column nowrap
+		margin-top: 280px
+	.wrapp__advantages--project
+		position: relative
+	.advantages__item
+		margin-bottom: 50px
+		margin-top: 20px
+		img
+			width: 70px
+	.advantages__item 
+		.advantages__item--desc
+			font-size: 20px
+			font-weight: 500
+	.wrapp__advantages--desc
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-flow: column nowrap
+		margin-bottom: 0
+		.wrapp__advantages--img__mob
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100%
+			.advantages--img
+				width: 100%
+				img 
+					width: 100%
+	.wrapp__aboutUs--icons
+		display: none
+	.wrapp__aboutUs--word
+		display: none
+	.section__aboutUs
+		padding: 5px 10px
+	.aboutUs__desc--title
+		font-size: 26px
+		margin-bottom: 30px
+	.aboutUs__desc--menu
+		margin-bottom: 30px
+	.wrapp__aboutUs--img__mob
+		position: absolute
+		bottom: -265px
+		right: 0
+		width: 90%
+		display: flex
+		justify-content: flex-end
+		align-items: flex-end
+		img
+			width: 100%
+	.wrapp__aboutUs--img
+		display: none	
+	.button.aboutUs__desc--button
+		width: 90px
+		height: 90px
+		font-size: 8px
+	.navbar__wrapp--mobail
+		display: none
+	.logo
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		img
+			width: 100px
+			height: auto
+	.wrapp__advantages--project
+		.advantages__item--project
+			margin-top: 12px
+			font-size: 24px
+			line-height: 1.1
+			span
+				font-size: 28px
+		img
+			width: 50%
+			margin-bottom: 10px
+	.campaing__icon--absolute
+		display: none
+.wrapp__campaign 
+	.button.button__campaign
+		img
+			margin-bottom: 10px
+.section__footer
+	margin-top: 130px
+// 	// ≥1200px
+// +media-breakpoint-down(lg)
+
+// // ≥992px
+// +media-breakpoint-down(md)
+	
+// // ≥768px
+// +media-breakpoint-down(md)
+
+
+
+// // ≥576px
+// +media-breakpoint-down(xs)
+
+
+// /*==========  Mobile First  ==========*/
+
+// // ≤576px
+// +media-breakpoint-up(sm)
+
+// // ≤768px
+// +media-breakpoint-up(md)
+
+// // ≤992px
+// +media-breakpoint-up(lg)
+
+// // ≤1200px
+// +media-breakpoint-up(xl)

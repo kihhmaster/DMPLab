@@ -1,0 +1,47 @@
+$default-font: Montserrat, sans-serif
+$text: #333
+
+// USER VARIABLES SECTION
+
+$accent: #FF7F57 // Accent Color
+$fontsize: 18px // Body Font Size
+$accent2: #087BA8
+$textcolor1:#191D2A // Text Color1
+$textcolor2:#252736// Text Color2
+$textcolor3 :#636363 // Text Color3
+$lineheight: 1.65 // Document Line Height
+$userfont: Montserrat, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 50px
+$gutter: $grid-gutter-width
+
+$assetImages: "../img/_src"
+
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+@mixin flex-center 
+	display: flex
+	align-items: center
+	justify-content: center
+@mixin flex-column-c 
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px
+$grid-columns: 12
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px)
+// $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px)
+
+$gutter: $grid-gutter-width
